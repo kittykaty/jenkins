@@ -22,6 +22,7 @@ node()
 {
     stage("name_of_stage")
     {
+        currentBuild.displayName = "#${BUILD_NUMBER} text1"
         ansiColor('xterm') {
             printlnGreen "Green text"
         }
