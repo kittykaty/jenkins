@@ -17,10 +17,6 @@ node()
             sh"git clone https://$username:$password@github.com/kittykaty/ansible_test.git"
         }
     }
-}
-    input("Please, allow to deploy")
-    
-    node(){
     
     stage("another_stage")
     {
