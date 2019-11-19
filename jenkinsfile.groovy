@@ -1,4 +1,6 @@
-properties([pipelineTriggers([cron('*/5 * * * *')])])
+properties([
+pipelineTriggers([])
+])
 
 node()
 {
