@@ -38,7 +38,7 @@ node()
     stage("another_stage")
     {
         def workDir=sh(returnStdout:true,script:"pwd").trim()
-        sh"cd ${workDir} && cd ./ansible_test && ls -lh"
+        //sh"cd ${workDir} && cd ./ansible_test && ls -lh"
     }
     stage("archive")
     {
