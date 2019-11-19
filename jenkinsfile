@@ -28,11 +28,11 @@ node()
     }
     stage("gitclone")
     {
-        //withCredentials([usernamePassword(credentialsId: '8ac4c009-83a1-4c60-9dae-dd0f7678c245', passwordVariable: 'password', usernameVariable: 'username')]) 
-        //{
-            //sh"git clone https://$username:$password@github.com/kittykaty/ansible_test.git"
-        //}
-        checkout scm
+        // withCredentials([usernamePassword(credentialsId: '8ac4c009-83a1-4c60-9dae-dd0f7678c245', passwordVariable: 'password', usernameVariable: 'username')]) 
+        // {
+            // sh"git clone https://$username:$password@github.com/kittykaty/ansible_test.git"
+        // }
+    checkout scm
     }
     
     stage("another_stage")
