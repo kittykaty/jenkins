@@ -1,4 +1,4 @@
-roperties([
+properties([
     pipelineTriggers([
         GenericTrigger(
             causeString: 'Push to master', 
