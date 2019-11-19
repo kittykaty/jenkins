@@ -38,7 +38,7 @@ node()
 {
     stage("name_of_stage")
     {
-        currentBuild.displayName = "#${BUILD_NUMBER} text1 ${BRANCH}"
+        currentBuild.displayName = "#${BUILD_NUMBER} text1 ${params.BRANCH}"
         ansiColor('xterm') {
             printlnGreen "Green text"
         }
